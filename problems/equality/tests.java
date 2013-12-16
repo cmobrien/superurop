@@ -1,5 +1,5 @@
 import static org.junit.Assert.*;
-import org.junit.test;
+import org.junit.Test;
 
 public class EqualityTest {
 

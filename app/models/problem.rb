@@ -61,7 +61,7 @@ class Problem < ActiveRecord::Base
 	def compile_tests
 		tests_text = self.tests.squish.gsub('"', '\\\\\\\\\\"')
 
-		command = "java -cp java/bin:/usr/share/java/junit.jar Compile \"{\\\"" + self.name.capitalize + "TestClass\\\":\\\"" + tests_text + "\\\"}\""
+		command = "java -cp java/bin:/usr/share/java/junit.jar Compile \"{\\\"" + self.name.capitalize + "Test\\\":\\\"" + tests_text + "\\\"}\""
 		puts '----------------------------------'
 		puts command
 		puts '----------------------------------'
@@ -80,7 +80,7 @@ class Problem < ActiveRecord::Base
 	end
 
 	def run_solution
-		command = "java -cp java/bin:/usr/share/java/junit.jar org.junit.runner.JUnitCore " + self.name.capitalize + "TestClass.java"
+		command = "java -cp java/bin:/usr/share/java/junit.jar org.junit.runner.JUnitCore " + self.name.capitalize + "Test.java"
 		puts '----------------------------------'
 		puts command
 		puts '----------------------------------'
