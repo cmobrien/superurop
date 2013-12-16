@@ -1,1 +1,8 @@
 <%= button_to "Update", problems_update_path, { method: 'get' } %>
+
+Current Problems:
+<ul>
+	<% for problem in Problem.all %>
+		<li><%= link_to problem.name, problems_path(@problem) %></li>
+	<% end %>
+</ul>

@@ -11,11 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131216024728) do
+ActiveRecord::Schema.define(version: 20131216052547) do
 
   create_table "problems", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "problem"
+    t.text     "python"
+    t.text     "template"
+    t.text     "solution"
+    t.text     "tests"
+    t.string   "name"
   end
 
 end
