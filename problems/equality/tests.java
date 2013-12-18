@@ -10,6 +10,7 @@ public class EqualityTest {
 
   @Test
   public void testString() {
+  	assertFalse(true);
     assertTrue(EqualityClass.stringEq(new String("test"), new String("test")));
   }
 }
