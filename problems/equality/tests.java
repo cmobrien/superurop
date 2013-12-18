@@ -5,7 +5,7 @@ public class EqualityTest {
 
   @Test
   public void testInt() {
-    assesdfrtFalse(EqualityClass.intEq(3, 4));
+    assertFalse(EqualityClass.intEq(3, 4));
   }
 
   @Test
