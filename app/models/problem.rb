@@ -158,7 +158,8 @@ class Problem < ActiveRecord::Base
 	end
 
 	def compile_tests
-		tests_text = self.tests.squish.gsub('"', '\\\\\\\\\\"')
+		import = "import " + self.name.capitalize + "Class;"
+		tests_text = import + self.tests.squish.gsub('"', '\\\\\\\\\\"')
 
 		command = "java -cp java/bin:/usr/share/java/junit.jar Compile \"{\\\"" + self.name.capitalize + "Test\\\":\\\"" + tests_text + "\\\"}\""
 
