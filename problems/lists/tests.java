@@ -5,19 +5,21 @@ import java.util.List;
 
 import org.junit.Test;
 
+import ListsClass
+
 public class ListsTest {
 
     @Test
     public void getTest() {
         List<String> L = new ArrayList<String>();
         L.add("Test");
-        assertEquals("Test", ListsClass.get(L, 0));
+        assertEquals("Test", get(L, 0));
     }
     
     @Test
     public void appendTest() {
         List<String> L = new ArrayList<String>();
-        ListsClass.append(L, "Test");
+        append(L, "Test");
         assertEquals("Test", L.get(0));
     }
     
@@ -25,7 +27,7 @@ public class ListsTest {
     public void removeTest() {
         List<String> L = new ArrayList<String>();
         L.add("Test");
-        ListsClass.remove(L, "Test");
+        remove(L, "Test");
         assertEquals(0, L.size());
     }
 }
