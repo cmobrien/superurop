@@ -11,13 +11,13 @@ public class ListsTest {
     public void getTest() {
         List<String> L = new ArrayList<String>();
         L.add("Test");
-        assertEquals("Test", TestClass.get(L, 0));
+        assertEquals("Test", ListsClass.get(L, 0));
     }
     
     @Test
     public void appendTest() {
         List<String> L = new ArrayList<String>();
-        TestClass.append(L, "Test");
+        ListsClass.append(L, "Test");
         assertEquals("Test", L.get(0));
     }
     
@@ -25,7 +25,7 @@ public class ListsTest {
     public void removeTest() {
         List<String> L = new ArrayList<String>();
         L.add("Test");
-        TestClass.remove(L, "Test");
+        ListsClass.remove(L, "Test");
         assertEquals(0, L.size());
     }
 }
