@@ -11,8 +11,8 @@
 	},
 	{
 		"name": "Variables",
-		"prerequisites" : [ "Static Typing" ],
-	 	"assumed" : []
+		"prerequisites" : [ "Static Typing"],
+	 	"assumed" : ["Primitives"]
 	},
 	{
 		"name": "Types",

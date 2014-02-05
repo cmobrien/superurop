@@ -8,6 +8,7 @@ class ProblemsController < ApplicationController
 	end
 
 	def update
+		Problem.update_concepts
 		@created = []
 		@updated = []
 		names = Problem.get_names
