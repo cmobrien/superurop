@@ -1,0 +1,4 @@
+digraph test {
+"Variables" -> "Static Typing"
+"Types" -> "Primitives"
+}

@@ -1,0 +1,22 @@
+{"concepts": [
+	{	
+		"name": "Static Typing",
+		"prerequisites" : [],
+		"assumed" : []
+	},
+	{
+		"name": "Primitives",
+		"prerequisites" : [],
+		"assumed" : []
+	},
+	{
+		"name": "Variables",
+		"prerequisites" : [ "Static Typing" ],
+	 	"assumed" : []
+	},
+	{
+		"name": "Types",
+		"prerequisites" : [ "Primitives" ],
+		"assumed" : []
+	}
+]}

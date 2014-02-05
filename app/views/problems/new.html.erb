@@ -1,8 +1,27 @@
 <%= button_to "Update", problems_update_path, { method: 'get' } %>
 
+<% if @errors.any? %>
+	Update found the following errors:
+	<ul>
+		<% for error in @errors %>
+			<li><%= error %></li>
+		<% end %>
+	</ul>
+<% end %>
+
+The following changes were made:
+<ul>
+	<% for created in @created %>
+		<li><%= created %> was created</li>
+	<% end %>
+	<% for updated in @updated %>
+		<li><%= updated %> was updated</li>
+	<% end %>
+</ul>
+
 Current Problems:
 <ul>
 	<% for problem in Problem.all %>
-		<li><%= link_to problem.name, problems_path(@problem) %></li>
+		<li><%= link_to problem.name, problem_path(problem) %></li>
 	<% end %>
 </ul>
