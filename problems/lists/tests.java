@@ -5,7 +5,7 @@ import java.util.List;
 
 import org.junit.Test;
 
-public class Test6test {
+public class ListsTest {
 
     @Test
     public void getTest() {

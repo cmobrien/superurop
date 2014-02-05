@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class TestClass {
+public class ListsClass {
   public static String get(List<String> L, int i) {
 
   }
